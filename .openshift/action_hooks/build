@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ ! -d ${OPENSHIFT_DATA_DIR}media ]; then
+    mkdir -p ${OPENSHIFT_DATA_DIR}media
+fi
+ln -snf ${OPENSHIFT_DATA_DIR}media $OPENSHIFT_REPO_DIR/wsgi/static/media
